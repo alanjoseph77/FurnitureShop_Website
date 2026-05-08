@@ -36,9 +36,12 @@ const KripaLanding = () => {
     return (
         <div className="min-h-screen flex flex-col justify-between overflow-x-hidden">
             <style>{`
+                html {
+                    scroll-behavior: smooth;
+                }
                 body {
                     font-family: 'Inter', sans-serif;
-                    background-color: #FBFDF9; 
+                    background-color: #FBFDF9;
                     color: #1A1A1A;
                     margin: 0;
                     padding: 0;

@@ -29,10 +29,10 @@ const HeroContent = () => {
                     </a>
                 </div>
                 
-                <button className="bg-[#8B5A2B] text-white px-10 py-4 md:px-12 md:py-5 rounded-full text-lg font-medium hover:bg-[#6b4421] transition-all shadow-[0_8px_25px_rgb(139,90,43,0.3)] hover:shadow-[0_8px_30px_rgb(139,90,43,0.5)] hover:-translate-y-1 w-full md:w-auto text-center flex justify-center items-center">
+                <a href="#collections" className="bg-[#8B5A2B] text-white px-10 py-4 md:px-12 md:py-5 rounded-full text-lg font-medium hover:bg-[#6b4421] transition-all shadow-[0_8px_25px_rgb(139,90,43,0.3)] hover:shadow-[0_8px_30px_rgb(139,90,43,0.5)] hover:-translate-y-1 w-full md:w-auto text-center flex justify-center items-center">
                     Explore Teak Collection
                     <svg className="ml-3" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-                </button>
+                </a>
             </div>
         </div>
     );

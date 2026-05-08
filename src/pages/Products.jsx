@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSearchParams } from 'react-router-dom';
-import { Filter, SlidersHorizontal } from 'lucide-react';
+import { SlidersHorizontal } from 'lucide-react';
+import Navbar from '../components/Navbar';
 
 const products = [
   { id: 1, name: 'Tova Dining Chair', category: 'Chairs', price: '$450', img: '/luxury_table.png', tag: 'New' },
@@ -24,9 +25,10 @@ const Products = () => {
     : products.filter(p => p.category === activeFilter);
 
   return (
-    <div style={{ minHeight: '100vh', backgroundColor: 'var(--bg-primary)' }}>
+    <div style={{ minHeight: '100vh', backgroundColor: '#FBFDF9' }}>
+      <Navbar />
       {/* Header Banner */}
-      <section style={{ padding: '4rem 0 2rem', backgroundColor: 'var(--bg-secondary)', borderBottom: '1px solid var(--border-subtle)' }}>
+      <section style={{ padding: '4rem 0 2rem', backgroundColor: '#f3ede4', borderBottom: '1px solid #e5ddd4' }}>
         <div className="container">
           <h1 className="title-md" style={{ marginBottom: '1rem' }}>The Collection</h1>
           <p style={{ color: 'var(--text-secondary)', maxWidth: '500px', fontSize: '1.1rem' }}>
@@ -55,9 +57,9 @@ const Products = () => {
                     padding: '0.6rem 1.5rem',
                     borderRadius: '30px',
                     border: '1px solid',
-                    borderColor: activeFilter === filter ? 'var(--text-primary)' : 'var(--border-subtle)',
-                    backgroundColor: activeFilter === filter ? 'var(--text-primary)' : 'transparent',
-                    color: activeFilter === filter ? '#fff' : 'var(--text-primary)',
+                    borderColor: activeFilter === filter ? '#1A1A1A' : '#d1c9be',
+                    backgroundColor: activeFilter === filter ? '#1A1A1A' : 'transparent',
+                    color: activeFilter === filter ? '#fff' : '#1A1A1A',
                     cursor: 'pointer',
                     fontFamily: 'var(--font-sans)',
                     fontWeight: 500,
@@ -102,7 +104,7 @@ const Products = () => {
                   {product.tag && (
                     <span style={{ 
                       position: 'absolute', top: '1rem', left: '1rem', zIndex: 10,
-                      backgroundColor: 'var(--bg-primary)', padding: '0.3rem 0.8rem',
+                      backgroundColor: '#FBFDF9', padding: '0.3rem 0.8rem',
                       fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em',
                       fontWeight: 600, borderRadius: '4px'
                     }}>

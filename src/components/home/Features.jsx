@@ -2,7 +2,7 @@ import React from 'react';
 
 const Features = () => {
     return (
-        <section className="max-w-[1600px] w-full mx-auto px-6 md:px-12 py-16 md:py-24 z-10 relative bg-white rounded-[40px] md:rounded-[80px] shadow-sm mb-12">
+        <section id="features" className="max-w-[1600px] w-full mx-auto px-6 md:px-12 py-16 md:py-24 z-10 relative bg-white rounded-[40px] md:rounded-[80px] shadow-sm mb-12">
             <div className="text-center mb-16">
                 <h2 className="text-xs font-bold tracking-widest text-[#8B5A2B] uppercase mb-4">Why Kripa Enterprises</h2>
                 <h3 className="text-3xl md:text-5xl font-serif text-[#1F1F1F]">The Gold Standard of Craftsmanship</h3>
